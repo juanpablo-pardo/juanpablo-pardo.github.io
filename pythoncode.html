@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DimensionPardo Official Webpage</title>
+    <link rel = "icon" href = "logo2.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <div class="menu">
+	    <img id="logo" src="logo.png" width="90px">
+
+	    <a href="index.html">Home</a>    
+	    <a href="descargas.html">Descargas</a>
+	    <a href="pythoncode.html">Python Code</a>
+	    <script src="https://apis.google.com/js/platform.js"></script>
+		<div class="youtube">
+		<div class="g-ytsubscribe" data-channelid="UCZCXbgLeDSXc31wUa0HUccA" data-layout="default" data-count="default"></div>
+	    </div></div>
+  </head>
+  <body>
+    <br><br>
+	  <h1>*Ejecutar en la consola de comandos los comandos en los comentarios de cada programa</h1>
+	  <h3>Programa para Descargar Vídeos de YouTube</h1>
+	  <pre>
+	  	<code>#pip install pytube
+from pytube import YouTube
+link = input("Introduce el link del vídeo: ")
+yt = YouTube(link)
+ys = yt.streams.get_highest_resolution()
+ys.download()</code></pre>
+
+         <a href="download.py" download="youtube.py">
+         <button><span>Descargar </span></button>
+         </a>
+	<h3>Programa para Generar Contraseñas Aleatorias</h3>
+
+		  <pre>
+	  	<code>import random
+import string
+letters = string.ascii_letters+"1234567890?"
+word=""
+n = int(input("Número de caracteres: "))
+for i in range (n):
+    random_letter = random.choice(letters)
+    word = word + letters
+
+print(word)</code></pre>
+         <a href="password generator.py" download="password generator.py">
+         <button><span>Download </span></button>
+         </a>
+
+	<h3>Programa para Pasar de Texto a Voz y Descargarlo</h3>
+
+		  <pre>
+	  	<code>#pip install gtts
+from gtts import gTTS
+import os
+texto = str(input("Introduce un texto: "))
+tts = gTTS(texto, lang='es-es')
+tts.save("good.mp3")</code></pre>
+         <a href="tts.py" download="texttospeech.py">
+         <button><span>Download </span></button>
+         </a>
+
+	  <h3>Programa para Mostrar una Notificación</h1>
+	  <pre>
+	  	<code>#pip install plyer
+from plyer import notification
+notification.notify(
+    title = "Hello Bro",
+    message = "How are you")</code></pre>
+
+         <a href="notification.py" download="notification.py">
+         <button><span>Download </span></button>
+         </a>
+	<h3>Programa para Pasar de Texto a Voz</h1>
+	  <pre>
+	  	<code>#pip install pyttsx3
+import pyttsx3
+engine = pyttsx3.init()
+palabra = str(input("Pon algo: "))
+engine.say(palabra)
+engine.runAndWait()
+</code></pre>
+
+         <a href="tts2.py" download="autotts.py">
+         <button><span>Download </span></button>
+         </a>
+
+
+	  </body>
+	  </html>
