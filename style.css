@@ -1,90 +1,79 @@
-#logo{
-	padding-left: 10px;
-	padding-right: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	float: left;
-}
-
-html{
-    background-color: #181a1b;
+body{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  place-items: center;
+  font-family: 'Rubik';
 }
 
 .menu {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 1; /* Position the navbar at the top of the page */
-    width: 99.5%; /* Full width */
     border-radius: 15px;
-    z-index: 10;
-  }
+    margin-top: 10px;
+    display: inline-block;
+    list-style-type: none;
+    top: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
  
 .menu a {
     float: left;
-    margin-top: 10px;
-    display: block;
-    color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 26px;
     text-decoration: none;
-    border-radius: 15px;
-    font-family: 'HK Grotesk', sans-serif;
-    font-size: 30px;
+    font-family: 'Rubik';
+    font-size: 20px;
 }
 
 .menu a:hover {
-    color: white;
-    background-color: blue;
+    color: black;
+}
+
+.selected{
+    font-weight: bold;
+    color: black;
 }
   
-.youtube{
-	padding-top: 30px;
-	padding-left: 630px;
-}
 
 #pablo{
-    float: left;
 	width: 20%;
-	padding-left: 1%;
-	filter: drop-shadow(15px 15px 7px rgba(0,0,0,0.8));
+    border-radius: 150px;
+    border: 5px solid #666;
 }
+
+h1{
+    font-family: 'Rubik';
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: rgb(27, 49, 101);
+}
+
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 
 #presentation{
-    position: absolute;
     top: 15%;
-	width: 30%;
     left: 22%;
-	font-size: 300%;
-	font-family: 'HK Grotesk', sans-serif;
-    color: white;
+	  font-family: 'Rubik', sans-serif;
     text-align: center;
-}
-
-#discord{
-    position: absolute;
-    right: 18%;
-    top: 15%;   
-    float: right;
-	text-align: right;
-    font-family: 'HK Grotesk', sans-serif;
-    color: white;
-}
-
-
-#discordlogo{
-	display: inline-block;
-	text-align: right;
-	width: 200px;
-	position: absolute;
-	margin-top: -150px;
-	margin-left: 30px;
+    font-size:150%;
 }
 
 
 button {
   border-radius: 10px;
-  background: linear-gradient(180deg,rgb(255, 196, 0) 0%, rgb(255, 115, 0) 100%);
+  background: linear-gradient(180deg,rgb(0, 255, 229) 0%, rgb(0, 200, 255) 100%);
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -95,7 +84,6 @@ button {
   cursor: pointer;
   margin: 5px;
   vertical-align: middle;
-  font-family: 'HK Grotesk', sans-serif;
 }
 
 button span {
@@ -121,84 +109,158 @@ button:hover span:after {
   right: 0;
 }
 
-
 h2{
-	font-size: 300%;
-	font-family: 'HK Grotesk', sans-serif;
-    color: white;
+  font-size: 400%;
 }
 
 h3{
-    font-size: 300%;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    font-size: 170%;
     font-family: 'HK Grotesk', sans-serif;
-    color: white;
+    margin-top: 0;
+}
+
+h4{
+  font-size: 150%;
+  font-family: 'HK Grotesk', sans-serif;
+  margin-top: 0;
+}
+
+h5{
+  font-size: 100%;
+  font-family: 'HK Grotesk', sans-serif;
+  margin-top:0;
+  padding: 10px;
+}
+
+#cursos #cards{
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  grid-template-columns: repeat(3, calc(33.33% - 10px));
+  padding-left:10px;
+}
+
+#cursos .card{
+  padding-bottom:5px;
 }
 
 
 
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
+#dplogo{
+  margin-left:150px;
 }
 
-code{font-size: 150%;}
-
-
-#filmora-logo{
-	height: 155px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+#labeldis{
+  font-family:'Rubik';
 }
 
-#photoshop-logo{
-	height: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#subcount{
+  transform: scale(0.4);
+  float: left;
+  height:10px;
+  margin-left:-10%;
+}
+#viewcount{
+  
+  float:right;
+  transform: scale(0.4);
+  height: 0px;
+  width: 500px;
+  margin-right: 10%;
+}
+#views{
+  margin-top:30px;
+  margin-left:200px;
 }
 
-#dr17{
-	height: 170px;
+
+#logo{
+  position:relative;
+  width:100px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
-#blender-logo{
-    height: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#peri{
+  position:relative;
+  width:120px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-top:20%;
+  padding-bottom:20%;
 }
+
+#suscripcion{
+  float:right;
+  margin-right: 20%;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size:90%;
+}
+
+a{
+  cursor: pointer;
+}
+
 
 #cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,
-    minmax(400px, 1fr));
-    gap: 20px;
+    grid-gap: 10px;
     align-items: center;
-    padding-top: 100px;
+    grid-template-columns: repeat(4, calc(25% - 10px));
 }
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-radius:40px;
-    background-color: rgb(72, 75, 81);
-    text-align: center;
-    padding-bottom: 10px
+    box-shadow: 6px 4px 8px 0 rgba(0,0,0,0.6);
+    border-radius:30px;
+    border: solid black 2px;
+    width: 90%;
+    height: 90%
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
 
+.active, .accordion:hover {
+  background-color: #ccc;
+}
 
-#correo{
-    border-radius: 10px;
-    background: linear-gradient(180deg,rgb(255, 196, 0) 0%, rgb(255, 115, 0) 100%);
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 300px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    vertical-align: middle;
-    font-family: 'HK Grotesk', sans-serif;
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#miformulario{
+  height:50px;
+}
+
+#setupphoto{
+  width:100%;
+  border-radius:30px;
+  box-shadow: 6px 8px 8px 0 rgba(0,0,0,0.6);
 }
