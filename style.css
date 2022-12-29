@@ -36,7 +36,6 @@ body{
     font-weight: bold;
     color: black;
 }
-  
 
 #pablo{
 	width: 20%;
@@ -44,27 +43,35 @@ body{
     border: 5px solid #666;
 }
 
-h1{
+h1{ /*Principales*/
     font-family: 'Rubik';
     font-size: 2.25rem;
     font-weight: 700;
     color: rgb(27, 49, 101);
 }
+h2{ /* Contadores*/
+  font-size: 400%;
+}
+h4{ /*Paneles*/
+  font-size: 150%;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 
-@keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+}
+h5{ /*Cursos y libros*/
+  font-size: 100%;
+  margin-top:0;
+  padding: 10px;
+}
+h6{ /*Títulos libros*/
+  font-size: 100%;
+  text-align: left;
+  padding-left: 20%;
+  padding-top: 0;
+  padding-bottom: 0;
+  color:rgb(27, 49, 101);
+}
 
 #presentation{
     top: 15%;
@@ -72,6 +79,8 @@ h1{
 	  font-family: 'Rubik', sans-serif;
     text-align: center;
     font-size:150%;
+    line-height: 140%;
+    color: black;
 }
 
 
@@ -89,13 +98,11 @@ button {
   margin: 5px;
   vertical-align: middle;
 }
-
 button span {
   cursor: pointer;
   position: relative;
   transition: 0.5s;
 }
-
 button span:after {
   content: '\00bb';
   opacity: 0;
@@ -103,38 +110,15 @@ button span:after {
   right: -20px;
   transition: 0.5s;
 }
-
 button:hover span {
   padding-right: 25px;
 }
-
 button:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-h2{
-  font-size: 400%;
-}
 
-h3{
-    font-size: 170%;
-    font-family: 'HK Grotesk', sans-serif;
-    margin-top: 0;
-}
-
-h4{
-  font-size: 150%;
-  font-family: 'HK Grotesk', sans-serif;
-  margin-top: 0;
-}
-
-h5{
-  font-size: 100%;
-  font-family: 'HK Grotesk', sans-serif;
-  margin-top:0;
-  padding: 10px;
-}
 
 #cursos #cards{
   display: grid;
@@ -202,6 +186,7 @@ p{
   margin-top: 0;
   margin-bottom: 0;
   font-size:90%;
+  color:rgb(27, 49, 101)
 }
 
 a{
@@ -222,6 +207,7 @@ a{
     width: 90%;
     height: 90%
 }
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -234,11 +220,9 @@ a{
   font-size: 15px;
   transition: 0.4s;
 }
-
 .active, .accordion:hover {
   background-color: #ccc;
 }
-
 .accordion:after {
   content: '\002B';
   color: #777;
@@ -246,11 +230,9 @@ a{
   float: right;
   margin-left: 5px;
 }
-
 .active:after {
   content: "\2212";
 }
-
 .panel {
   padding: 0 18px;
   background-color: white;
