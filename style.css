@@ -1,3 +1,18 @@
+@keyframes appear1 {
+  from {opacity: 0%;margin-left:30px;}
+  to {opacity: 100%;margin-left:0px;}
+}
+
+@keyframes grow{
+  from{width:0%}
+  to{}
+}
+
+@keyframes growhigh{
+  from{height:0%}
+  to{}
+}
+
 body{
   max-width: 800px;
   margin: 0 auto;
@@ -43,6 +58,8 @@ body{
 	width: 30%;
   border-radius: 150px;
   border: 5px solid #666;
+  animation-name: appear1;
+  animation-duration: 2s;
 }
 
 button b{
@@ -64,10 +81,7 @@ h2{ /* Contadores*/
 }
 h4{ /*Paneles*/
   font-size: 150%;
-  margin-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-
+  margin: 10px;
 }
 h5{ /*Cursos y libros*/
   font-size: 100%;
@@ -83,6 +97,42 @@ h6{ /*Títulos libros*/
   color:rgb(27, 49, 101);
 }
 
+#cards{
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  grid-template-columns: repeat(4, calc(25% - 10px));
+}
+.card{
+  box-shadow: 6px 4px 8px 0 rgba(0,0,0,0.6);
+  border-radius:30px;
+  border: solid black 2px;
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+}
+#proyects{
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  grid-template-columns: repeat(2, calc(50% - 0px));
+}
+
+#logo{
+  animation-name:grow;
+  animation-duration:2s;
+  position:relative;
+  width:70%;
+  padding-bottom: 5px;
+  
+}
+
+#proyects #logo{
+  animation:none;
+  object-fit: cover; width: 90%; height: 150px;
+  border-radius:15px;
+}
+
 #presentation{
     top: 15%;
     left: 22%;
@@ -96,23 +146,18 @@ h6{ /*Títulos libros*/
 
 button {
   border-radius: 10px;
-  background: linear-gradient(180deg,rgb(0, 255, 229) 0%, rgb(0, 200, 255) 100%);
+  background: #1b3165;
   border: none;
   color: #FFFFFF;
-  text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 300px;
+  width: 310px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  vertical-align: middle;
+  font-family: 'Rubik', sans-serif;
 }
-button span {
-  cursor: pointer;
-  position: relative;
-  transition: 0.5s;
-}
+
 button span:after {
   content: '\00bb';
   opacity: 0;
@@ -120,12 +165,23 @@ button span:after {
   right: -20px;
   transition: 0.5s;
 }
-button:hover span {
-  padding-right: 25px;
-}
 button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.card button {
+  border-radius: 10px;
+  background: #1b3165;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 20px;
+  width: 45%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -136,10 +192,6 @@ button:hover span:after {
   align-items: center;
   grid-template-columns: repeat(3, calc(33.33% - 10px));
   padding-left:10px;
-}
-
-#cursos .card{
-  padding-bottom:5px;
 }
 
 
@@ -172,12 +224,7 @@ button:hover span:after {
 }
 
 
-#logo{
-  position:relative;
-  width:100px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
+
 
 #peri{
   position:relative;
@@ -204,19 +251,7 @@ a{
 }
 
 
-#cards{
-    display: grid;
-    grid-gap: 10px;
-    align-items: center;
-    grid-template-columns: repeat(4, calc(25% - 10px));
-}
-.card{
-    box-shadow: 6px 4px 8px 0 rgba(0,0,0,0.6);
-    border-radius:30px;
-    border: solid black 2px;
-    width: 90%;
-    height: 90%
-}
+
 
 .accordion {
   background-color: #eee;
