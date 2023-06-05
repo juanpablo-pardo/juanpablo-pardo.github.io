@@ -209,52 +209,104 @@
 		</h5>
 			</div>
 		</div>
-		<h4><b>Libros (pdf):</b></h4>
+		<h2><b>Libros (pdf):</b></h2>
 
-		<h6>Python</h6>
-		<h5>
-			<a onclick=" window.open('Libros/Python a fondo.pdf')">Python a fondo</a><br><br>
-			<a onclick=" window.open('Libros/Python Aplicaciones prácticas.pdf')">Python Aplicaciones prácticas</a><br><br>
-			<a onclick=" window.open('Libros/Python Crash Course.pdf')">Python Crash Course</a><br><br>
-			<a onclick=" window.open('Libros/Aprende Python.pdf')">Aprende Python</a><br><br>
-			<a onclick=" window.open('Libros/Aprende a Pensar Como un Programador con Python.pdf')">Aprende a Pensar Como un Programador con Python</a><br><br>
-		</h5>
-
-		<h6>Machine Learning</h6>
-		<h5>
-			<a onclick=" window.open('Libros/Introduction to Algorithms.pdf')">Introduction to Algorithms</a><br><br>
-			<a onclick=" window.open('Libros/Machine Learning Yearing.pdf')">Machine Learning Yearing</a><br><br>
-			<a onclick=" window.open('Libros/Physics-based Deep Learning.pdf')">Physics-based Deep Learning</a><br><br>
-			<a onclick=" window.open('Libros/Deep Learning Methods and Applications.pdf')">Deep Learning Methods and Applications</a><br><br>	
-			<a onclick=" window.open('Libros/Deep learning Techical introduction.pdf')">Deep Learning Techical introduction</a><br><br>
-			<a onclick=" window.open('Libros/The Hundred Page Machine Learning Book.pdf')">The Hundred-Page Machine Learning Book</a><br><br>
-			<a onclick=" window.open('Libros/A Brief Introduction to Machine Learning for Engineers.pdf')">A Brief Introduction to Machine Learning for Engineers</a><br><br>
-			<a onclick=" window.open('Libros/An Introduction to Reinforcement Learning.pdf')">An Introduction to Reinforcement Learning</a><br><br>
-			<a onclick=" window.open('Libros/Foundations of Machine Learning.pdf')">Foundations of Machine Learning</a><br><br>
-			<a onclick=" window.open('Libros/Gaussian Processes for Machine Learning.pdf')">Gaussian Processes for Machine Learning</a><br><br>
-			<a onclick=" window.open('Libros/Introductory Machine Learning Notes.pdf')">Introductory Machine Learning Notes</a><br><br>
-			<a onclick=" window.open('Libros/El Mito de la Inteligencia Artificial.pdf')">El Mito de la Inteligencia Artificial</a><br><br>
-			<a onclick=" window.open('Libros/The Myth of Artificial Intelligence.pdf')">The Myth of Artificial Intelligence</a><br><br>
-			<a onclick=" window.open('Libros/Applied Artificial Intelligence.pdf')">Applied Artificial Intelligence</a><br><br>
-			<a onclick=" window.open('Libros/Artificial Intelligence. A Modern Approach.pdf')">Artificial Intelligence. A Modern Approach</a><br><br>
-			<a onclick=" window.open('Libros/How to Create a Mind.pdf')">How to Create a Mind</a><br><br>
-			<a onclick=" window.open('Libros/Machine Learning for Dummies.pdf')">Machine Learning for Dummies</a><br><br>
-			<a onclick=" window.open('Libros/Machine Learning. The New AI.pdf')">Machine Learning. The New AI</a><br><br>
-			<a onclick=" window.open('Libros/Superintelligence.pdf')">The Myth of Artificial Intelligence</a><br><br>
-			<a onclick=" window.open('Libros/Superpotencias de la IA.pdf')">Superpotencias de la IA</a><br><br>
-			<a onclick=" window.open('Libros/The Master Algorithm.pdf')">The Master Algorithm</a><br><br>
-		</h5>
-
-		<h6>Otros</h6>
-		<h5>
-			<a onclick=" window.open('Libros/Ejercicios prácticos con Raspberry Pi.pdf')">Ejercicios prácticos con Raspberry Pi</a><br><br>
-			<a onclick=" window.open('Libros/El gran libro de HTML5, CSS3 y Javascript.pdf')">El gran libro de HTML5, CSS3 y Javascript</a><br><br>
-			<a onclick=" window.open('Libros/Manual Imprescindible de C y C++.pdf')">Manual Imprescindible de C y C++.pdf</a><br><br>
-			<a onclick=" window.open('Libros/Progit.pdf')">Guía Oficial Git</a><br><br>
-			<a onclick=" window.open('Libros/Código Limpio.pdf')">Código Limpio</a><br><br>
-		</h5>
+		<div id="libros">
+			<div class="flip-card" onclick=" window.open('Libros/El Mito de la Inteligencia Artificial.pdf')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="1.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>El Mito de la Inteligencia Artificial</h3>
+					<p>Erik J. Larson</p>
+				  </div>
+				</div>
+			</div>
+			<div class="flip-card" onclick=" window.open('Libros/Machine Learning. The New AI.pdf')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="2.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>Machine Learning. The New AI</h3>
+					<p>Ethem Alpaydin</p>
+				  </div>
+				</div>
+			</div>
+			<div class="flip-card" onclick=" window.open('Libros/Inteligencia Artificial. Un enfoque moderno.pdf')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="3.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>Inteligencia Artificial. Un Enfoque Moderno</h3>
+					<p>Stuart Russel</p>
+					<p>Peter Norvig</p>
+				  </div>
+				</div>
+			</div>
+			<div class="flip-card" onclick=" window.open('Libros/An Introduction to Reinforcement Learning.pdf')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="4.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>Reinforcement Learning. An Introduction.</h3>
+					<p>Richard S. Sutton</p>
+					<p>Andrew G. Barto</p>
+				  </div>
+				</div>
+			</div>
+			<div class="flip-card" onclick=" window.open('Libros/A Brief Introduction to Machine Learning for Engineers.pdf')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="5.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>A Brief Introduction to Machine Learning for Engineers.</h3>
+					<p>Osvaldo Simeone</p>
+				  </div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner" onclick=" window.open('Libros/The Hundred Page Machine Learning Book.pdf')">
+				  <div class="flip-card-front">
+					<img src="6.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>The Hundred-Page Machine Learning Book</h3>
+					<p>Andriy Burkov</p>
+				  </div>
+				</div>
+			</div>
+			<div class="flip-card" onclick=" window.open('Libros/Machine Learning Yearing.pdf')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="7.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>Machine Learning Yearing</h3>
+					<p>Andrew NG</p>
+				  </div>
+				</div>
+			</div>
+			<div class="flip-card" onclick=" window.open('Libros/El gran libro de HTML5, CSS3 y Javascript.pdf')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="8.jpg" alt="Avatar" id="bookcover">
+				  </div>
+				  <div class="flip-card-back">
+					<h3>El Gran Libro de HTML5, CSS3 y Javascript</h3>
+					<p>Juan Diego Gauchat</p>
+				  </div>
+				</div>
+			</div>
+				
+		
+			</div>	
 	</div>
-	
+
 	<br><br>
 	<h1 id="labeldis">Únete al Servidor de Discord</h1>
 	<img id="dplogo" src="Iconos/discord.png" width="100px">
