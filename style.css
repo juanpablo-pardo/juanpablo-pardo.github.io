@@ -18,7 +18,7 @@ body{
   margin: 0 auto;
   text-align: center;
   place-items: center;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
 }
 
 .menu {
@@ -39,7 +39,6 @@ body{
     text-align: center;
     padding: 20px 26px;
     text-decoration: none;
-    font-family: 'Rubik';
     color:#444;
     font-size: 150%;
 }
@@ -71,7 +70,6 @@ p b{
 }
 
 h1{ /*Principales*/
-    font-family: 'Rubik';
     font-size: 2.25rem;
     font-weight: 700;
     color: rgb(27, 49, 101);
@@ -136,7 +134,6 @@ h6{ /*Títulos libros*/
 #presentation{
     top: 15%;
     left: 22%;
-	  font-family: 'Rubik', sans-serif;
     text-align: center;
     font-size:150%;
     line-height: 140%;
@@ -155,7 +152,7 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  font-family: 'Rubik', sans-serif;
+
 }
 
 button span:after {
@@ -181,27 +178,26 @@ button:hover span:after {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  font-family: 'Rubik', sans-serif;
 }
 
 
 
 #cursos #cards{
+  width: 95%;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 0px;
   align-items: center;
-  grid-template-columns: repeat(3, calc(33.33% - 10px));
-  padding-left:10px;
+  grid-template-columns: repeat(3, calc(35.3%));
+}
+#cursos .card{
+  width: 95%;
+  padding: 0px;
 }
 
 
 
 #dplogo{
   margin-left:150px;
-}
-
-#labeldis{
-  font-family:'Rubik';
 }
 
 #subcount{
