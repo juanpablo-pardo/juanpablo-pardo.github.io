@@ -222,13 +222,14 @@ button:after {
 #cursos #cards{
   width: 95%;
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 5px;
   align-items: center;
   grid-template-columns: repeat(3, calc(35.3%));
 }
 #cursos .card{
-  width: 95%;
+  width: 98.5%;
   padding: 0px;
+  margin: -10px;
 }
 
 
