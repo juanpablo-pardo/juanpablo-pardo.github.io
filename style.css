@@ -210,6 +210,9 @@ button:after {
   border-radius: 10px;
 }
 
+
+
+
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
@@ -317,7 +320,7 @@ a{
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -342,4 +345,29 @@ a{
 
 #cursos button{
   background: black !important;
+}
+
+
+
+body{
+  background-image:url("background.jpg");
+  background-attachment: fixed;
+
+}
+
+/*
+html {
+  --s: 50px;
+  --c: #b6b6b6;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #a5a5a500 66%,#8e8e8e 68% 70%,#64646400 72%;
+  background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
 }
