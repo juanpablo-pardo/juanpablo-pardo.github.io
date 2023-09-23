@@ -198,6 +198,18 @@ button:after {
   border-radius: 10px;
 }
 
+#cursos button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(12, 23, 47) !important;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
@@ -291,13 +303,13 @@ a{
   color: white !important;
   cursor: pointer !important;
   padding: 18px !important;
-  width: 100% !important;
   border: none !important;
   text-align: left !important;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
 }
+
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -320,75 +332,14 @@ a{
   border-radius:30px;
   box-shadow: 6px 8px 8px 0 rgba(0,0,0,0.6);
 }
-#bookcover{
-  width:250px;
-  height:350px;
-  border-radius:20px;
+
+.option{
+  width:35%;
+  margin-left:-6%;
+  background:black !important;
+
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 350px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  border: none;
-  cursor: pointer;
-  margin-bottom: 5px;
+#cursos button{
+  background: black !important;
 }
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  border-radius: 20px;
-  box-shadow: 6px 8px 8px 0 rgba(0,0,0,0.6);
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  border-radius: 20px;
-}
-
-.flip-card-back {
-  background: linear-gradient(163deg, rgba(2,0,36,1) 0%, rgba(74,74,140,1) 35%, rgba(0,212,255,1) 100%);
-  color: white;
-  transform: rotateY(180deg);
-}
-
-#libros{
-  display: grid;
-  grid-gap: 10px;
-  align-items: center;
-  grid-template-columns: repeat(3, calc(35% - 15px));
-  margin-bottom: 30px;
-}
-
-#libros h3{
-  color: white !important;
-  font-size:140%;
-  margin: 25px;
-  padding-top: 10px;
-}
-
-#libros p{
-  color: white;
-}
-
