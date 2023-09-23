@@ -348,14 +348,6 @@ a{
 }
 
 
-
-body{
-  background-image:url("background.jpg");
-  background-attachment: fixed;
-
-}
-
-/*
 html {
   --s: 50px;
   --c: #b6b6b6;
