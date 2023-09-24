@@ -19,6 +19,7 @@ body{
   text-align: center;
   place-items: center;
   font-family: 'Rubik', sans-serif;
+  background-color:#b8ccff;
 }
 
 .menu {
@@ -339,17 +340,4 @@ a{
 .option{
   width:35%;
   margin-left:-6%;
-  background:black !important;
-
 }
-
-#cursos button{
-  background: black !important;
-}
-
-
-html {
-  background-color:#aecbff
-
-}
-
