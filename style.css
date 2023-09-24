@@ -346,8 +346,7 @@ a{
 #cursos button{
   background: black !important;
 }
-
-
+/*
 html {
   --s: 50px;
   --c: #b6b6b6;
@@ -362,4 +361,73 @@ html {
     repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
     radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
   background-attachment: fixed;
+}
+
+*/
+html {
+  --u: 1vmax; /* change hexagon size */
+	--c1: #c7e4fb;
+	--c2: #b9dffe;
+	--c3: #afdafd;
+	--c4: #a1d6ff;
+	--gp: 50% / calc(var(--u) * 10) calc(var(--u) * 12);
+	--glt: repeating-conic-gradient(
+			from 210deg at 16.66% 25%,
+			var(--c2) 0% 33.3%,
+			#fff0 0% 100%
+		)
+		var(--gp);
+	--glb: repeating-conic-gradient(
+			from 210deg at 16.66% 75%,
+			var(--c4) 0% 33.3%,
+			#fff0 0% 100%
+		)
+		var(--gp);
+	height: 100vh;
+	background: repeating-linear-gradient(
+				to bottom,
+				var(--c1) 0% 1.5%,
+				transparent 1.5% 23.5%,
+				var(--c2) 23.5% 26.5%,
+				transparent 26.5% 48.5%,
+				var(--c3) 48.5% 51.5%,
+				transparent 51.5% 73.5%,
+				var(--c4) 73.5% 76.5%,
+				transparent 76.5% 98.5%,
+				var(--c1) 98.5% 100%
+			)
+			var(--gp),
+		var(--glt), var(--glb), var(--glt), var(--glb), var(--glt), var(--glb),
+		var(--glt), var(--glb),
+		repeating-conic-gradient(
+				from 150deg at 50% 75%,
+				var(--c1) 0% 33.3%,
+				#fff0 0% 100%
+			)
+			var(--gp),
+		repeating-conic-gradient(
+				from 90deg at 66.66% 50%,
+				var(--c4) 0% 33.3%,
+				#fff0 0% 100%
+			)
+			var(--gp),
+		repeating-conic-gradient(
+				from -90deg at 50% 25%,
+				var(--c1) 0% 33.3%,
+				var(--c2) 0% 66.4%,
+				var(--c3) 0% 100%
+			)
+			var(--gp);
+      background-attachment: fixed;
+
+
+}
+
+html:before {
+	content: "";
+	background: linear-gradient(-45deg, #002542 0%, transparent 50%, #d2ebff 100%);
+	width: 100vw;
+	height: 100vh;
+  background-attachment: fixed;
+
 }
