@@ -1,191 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DimensionPardo</title>
-	<link rel = "icon" href = "logo2.png" type = "image/x-icon">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-	<div class="menu">
-	    <a href="index.html">Inicio</a>    
-	    <a class = "selected" href="canal.html">Canal</a>
-	    <a href="clases.html">Clases</a>
-		<a href="contacto.html">Contacto</a>
-    </div>
-
   </head>
   <body>
-	
-	<h1>Suscríbete a DimensionPardo</h1>
-	<img id="dplogo" src="logo.png" width="100px">
-	<button id="suscripcion" onclick="window.open('https://www.youtube.com/c/DimensionPardo?sub_confirmation=1')">Suscríbete</button>
-	<br><br>
+    <header>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>    
+        <a class="selected" href="canal.html">Canal</a>
+        <a href="clases.html">Clases</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
 
-	<div id="contadores">
-	<div id="subcount">
-	<h2>Suscriptores:</h2>
-	<iframe height="300px" width="600px" frameborder=0 src="https://socialcounts.org/youtube-live-subscriber-count/UCZCXbgLeDSXc31wUa0HUccA/embed?style=.odoParrent%7Bcolor%3A+rgba%2827%2C49%2C101%2C1%29%7D.title%7Bfont-size%3A0px%7Dbody%7Bbackground-color%3Argba%280%2C0%2C0%2C0%29%21important%7D&fullscreen=true&odoUpColor=rgba%2827%2C49%2C101%2C1%29&odoDownColor=rgba%2827%2C49%2C101%2C1%29"></iframe>
-	</div>
-	<div id="viewcount">
-	<h2 id="views">Visitas:</h2>
-	<iframe height="300px" width="700px" frameborder=0 src="https://socialcounts.org/youtube-live-subscriber-count/UCZCXbgLeDSXc31wUa0HUccA/embed?style=.odoParrent%7Bcolor%3A+rgba%2827%2C49%2C101%2C1%29%7D.title%7Bfont-size%3A0px%7Dbody%7Bbackground-color%3Argba%280%2C0%2C0%2C0%29%21important%7D&fullscreen=true&odoUpColor=rgba%2827%2C49%2C101%2C1%29&odoDownColor=rgba%2827%2C49%2C101%2C1%29&counter=1"></iframe>
-	</div>
-	</div>
+    <main class="content">
+      <section class="channel-info">
+        <h1>Suscríbete a DimensionPardo</h1>
+        <div class="channel-header">
+          <img class="channel-logo" src="logo.png" alt="DimensionPardo Logo">
+          <button class="subscribe-btn" onclick="window.open('https://www.youtube.com/c/DimensionPardo?sub_confirmation=1')">Suscríbete</button>
+        </div>
+      </section>
 
-	<br><br><br><br><br><br><br><br><br>
-
-	<button class="accordion" style="width:100%;"><b>Mi Setup</b></button>
-	<div class="panel" id="setup">
-		<br>
-		<img src="Setup/misetup.png" id="setupphoto"><br><br>
-			<div id="cards">
-				<a onclick=" window.open('https://amzn.to/3Mm8GPr')"><div class="card">
-					<img src="Setup\portatil.png" id="logo">
-					<h4>HP VICTUS 16 i5-12500h RTX 3050TI 16GB RAM 512GB SSD</h4>
-				</div></a>
-		  
-				<a onclick=" window.open('https://amzn.to/3ShxkUU')"><div class="card">
-					<img src="Setup\raspberrypi.png" id="logo">
-					<h4>Raspberry Pi 4</h4>
-				</div></a>
-
-				
-		  
-				<a onclick=" window.open('https://amzn.to/46OT4vW')"><div class="card">
-					<img src="Setup\monitor.png" id="logo">
-					<h4>Monitor 4K AOC U2879VF</h4>
-				</div></a>
-		  
-				<a onclick=" window.open('https://amzn.to/3tR9EN7')"><div class="card">
-					<img src="Setup\silla.png" id="logo">
-					<h4>Silla Songmics</h4>
-				</div></a>
-		  
-			  </div>
-			<div id="cards">
-		  
-				<a onclick=" window.open('https://amzn.to/49co4HE')"><div class="card">
-					<img id="peri" src="Setup\g815.png" id="logo">
-					<h4>Teclado <br> Logitech G815</h4>
-				</div></a>
-		  
-				<a onclick=" window.open('https://amzn.to/3Qf4Zw2')"><div class="card">
-					<img id="peri" src="Setup\mxmaster.png" id="logo">
-					<h4>MX Master 3</h4>
-				  </div></a>
-	
-				  <a onclick=" window.open('https://amzn.to/3shmZO7')"><div class="card">
-					<img src="Setup\auriculares.png" id="logo">
-					<h4>Auriculares<br> Tronsmart Shadow</h4>
-				  </div></a>
-	
-				  <a onclick=" window.open('https://amzn.to/3MkDHmx')"><div class="card">
-					<img src="Setup\yeti.png" id="logo">
-					<h4>Micrófono <br>Blue Yeti</h4>
-				  </div></a>
-			  
-			</div>
-			<div id="cards">
-		  
-				<a onclick=" window.open('https://amzn.to/45PwLFc')"><div class="card">
-					<img src="Setup\huion.png" id="logo">
-					<h4>Tableta Gráfica Huion</h4>
-				</div></a>
-		  
-				<a onclick=" window.open('https://amzn.to/3QAQwM4')"><div class="card">
-					<img src="Setup\tripode.png" id="logo">
-					<h4>Trípode Manfrotto</h4>
-				  </div></a>
-	
-				  <a onclick=" window.open('https://amzn.to/45QG8En')"><div class="card">
-					<img src="Setup\gymbal.png" id="logo">
-					<h4>Gymbal Hohem</h4>
-				  </div></a>
-	
-				  <a onclick=" window.open('https://amzn.to/49asU8u')"><div class="card">
-					<img src="Setup\foco.png" id="logo">
-					<h4>Panel LED<br> RGB</h4>
-				  </div></a>
-			  
-			</div>
-	</div>
-	
-	<button class="accordion" style="width:100%;"><b>Mis Programas</b></button>
-	<div class="panel" id="programas">
-		<br>
-		<div id="cards1" style="text-align: center;">
-	  
-			<a onclick=" window.open('https://descarga.xyz/davinci-resolve-studio-descarga-full-crack-mega-2/')"><div class="card">
-				<img src="Iconos/dr17.png" id="logo">
-				<h4>DR Studio <br>19 Crack</h4>
-			</div></a>
-	  
-			<a onclick=" window.open('https://descarga.xyz/wondershare-filmora-full-crack-mega-4/')"><div class="card">
-				<img src="Iconos/filmora.png" id="logo">
-				<h4>Filmora 13 Crack</h4>
-			</div></a>
-	  
-			<a onclick=" window.open('https://www.blender.org/')"><div class="card">
-				<img src="Iconos/blender.png" id="logo">
-				<h4>Blender</h4>
-			</div></a>
-		  </div>
-		<div id="cards1">
-	  
-			<a onclick=" window.open('https://www.artistapirata.com/adobe-photoshop-cc-2024-la-revolucion-de-la-ia-en-diseno-grafico/')"><div class="card">
-				<img src="Iconos/photoshop.png" id="logo">
-				<h4>Photoshop Crack</h4>
-			</div></a>
-	  
-			<a onclick=" window.open('https://chatgpt.com')"><div class="card">
-				<img src="Iconos/openai.png" id="logo">
-				<h4>ChatGPT</h4>
-		  	</div></a>
-	  
-			<a onclick=" window.open('https://apps.microsoft.com/detail/xp9khm4bk9fz7q?hl=en-US&gl=US')"><div class="card">
-				<img src="Iconos/vscode.png" id="logo">
-				<h4>Visual Studio Code</h4>
-		  	</div></a>
-
-		</div>
-		<br>
-		Servicios de Microsoft y Google, especialmente OneNote
-		<br><br><br>
-	</div>
-	
-	<button class="accordion" style="width:100%;"><b>Aprende Programación!</b></button>
-	<div class="panel" id="cursos">
-		<br>
-		<button style="width: 30%;"onclick="window.open('https://edx.org/cs50')">CS50</button>
-		<button style="width: 30%;"onclick="window.open('https://www.sololearn.com/')">Sololearn</button>
-		<button style="width: 30%;"onclick="window.open('https://www.w3schools.com/')">W3Schools</button>
-		<br><br>
-		<button style="float: left; margin-left:40px;"onclick="window.open('https://youtube.com/playlist?list=PL-Ogd76BhmcC_E2RjgIIJZd1DQdYHcVf0&si=_nTbVND9AOMCgGFI')">Tutoriales IA DotCSV</button>
-		<button style="float: right;margin-right:40px;"onclick="window.open('https://youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc&si=Ye6yNfGi1t8854cu')">The Age of AI</button>
-		
-		<div style="float:left;"><br>
-		<b style="margin-left:-30px;">CS50'S Introduction to Artificial Intelligence</b>
-		<br><button onclick=" window.open('https://cs50.harvard.edu/ai/2023/')" class="option">Harvard</button>
-		<button onclick=" window.open('https://www.edx.org/learn/artificial-intelligence/harvard-university-cs50-s-introduction-to-artificial-intelligence-with-python')" class="option" style="width:25%;">EDX</button>
-		<button onclick=" window.open('https://www.youtube.com/playlist?list=PLhQjrBD2T381PopUTYtMSstgk-hsTGkVm')" class="option">YouTube</button>
-		<br><br></div>
-
-		<b style="float:right; margin-right:85px;"><br>Machine Learning with Python</b><br>
-		<div style="float:right;margin-right:35px;">	
-			<button onclick=" window.open('https://www.freecodecamp.org/learn/machine-learning-with-python/')"class="option" style="width: 48%;">Website</button>
-			<button onclick=" window.open('https://www.youtube.com/watch?v=tPYj3fFJGjk')"class="option" style="width: 48%; margin-left:-8%;">YouTube</button><br>
-			<br>
-		</div>
-		<button style="float: left; margin-left:40px;" onclick="window.open('https://es.1lib.sk/booklist/1354904/6712f7/programaci%C3%B3n.html')">Libros Programación</button>
-		<button style="float: right; margin-right:40px;" onclick="window.open('https://es.1lib.sk/booklist/1354869/bc0797/ai.html')">Libros IA</button>	  
-</div>
-
-
-
-	<br><br>
-	<h1 id="labeldis">Únete al Servidor de Discord</h1>
-	<img id="dplogo" src="Iconos/discord.png" width="100px">
-	<button class="glow-on-hover" id="suscripcion" onclick="window.open('https://discord.gg/vQnmRFb6Jg')">Unirse</button>
-	
-	<br><br>
-	<script src="script.js"></script>
+      <section class="accordion-section">
+        <button class="accordion"><strong>Mi Setup</strong></button>
+        <div class="panel" id="setup">
+          <img src="Setup/misetup.png" class="setup-photo" alt="Mi setup">
+          
+          <div class="card-grid card-grid-4">
+            <a href="https://amzn.to/3Mm8GPr" class="card-link">
+              <div class="card">
+                <img src="Setup/portatil.png" class="logo" alt="Portátil">
+                <h3>HP VICTUS 16 i5-12500h RTX 3050TI 16GB RAM 512GB SSD</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/3ShxkUU" class="card-link">
+              <div class="card">
+                <img src="Setup/raspberrypi.png" class="logo" alt="Raspberry Pi">
+                <h3>Raspberry Pi 4</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/46OT4vW" class="card-link">
+              <div class="card">
+                <img src="Setup/monitor.png" class="logo" alt="Monitor">
+                <h3>Monitor 4K AOC U2879VF</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/3tR9EN7" class="card-link">
+              <div class="card">
+                <img src="Setup/silla.png" class="logo" alt="Silla">
+                <h3>Silla Songmics</h3>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card-grid card-grid-4">
+            <a href="https://amzn.to/49co4HE" class="card-link">
+              <div class="card">
+                <img src="Setup/g815.png" class="logo peripheral" alt="Teclado">
+                <h3>Teclado <br> Logitech G815</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/3Qf4Zw2" class="card-link">
+              <div class="card">
+                <img src="Setup/mxmaster.png" class="logo peripheral" alt="MX Master">
+                <h3>MX Master 3</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/3shmZO7" class="card-link">
+              <div class="card">
+                <img src="Setup/auriculares.png" class="logo" alt="Auriculares">
+                <h3>Auriculares<br> Tronsmart Shadow</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/3MkDHmx" class="card-link">
+              <div class="card">
+                <img src="Setup/yeti.png" class="logo" alt="Micrófono">
+                <h3>Micrófono <br>Blue Yeti</h3>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card-grid card-grid-4">
+            <a href="https://amzn.to/45PwLFc" class="card-link">
+              <div class="card">
+                <img src="Setup/huion.png" class="logo" alt="Tableta Gráfica">
+                <h3>Tableta Gráfica Huion</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/3QAQwM4" class="card-link">
+              <div class="card">
+                <img src="Setup/tripode.png" class="logo" alt="Trípode">
+                <h3>Trípode Manfrotto</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/45QG8En" class="card-link">
+              <div class="card">
+                <img src="Setup/gymbal.png" class="logo" alt="Gymbal">
+                <h3>Gymbal Hohem</h3>
+              </div>
+            </a>
+            
+            <a href="https://amzn.to/49asU8u" class="card-link">
+              <div class="card">
+                <img src="Setup/foco.png" class="logo" alt="Panel LED">
+                <h3>Panel LED<br> RGB</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        
+        <button class="accordion"><strong>Aprende Programación!</strong></button>
+        <div class="panel" id="cursos">
+          <div class="button-row">
+            <button class="course-button" onclick="window.open('https://edx.org/cs50')">CS50</button>
+            <button class="course-button" onclick="window.open('https://www.sololearn.com/')">Sololearn</button>
+            <button class="course-button" onclick="window.open('https://www.w3schools.com/')">W3Schools</button>
+          </div>
+          
+          <div class="tutorial-section">
+            <div class="left-side">
+              <button class="full-width-btn" onclick="window.open('https://youtube.com/playlist?list=PL-Ogd76BhmcC_E2RjgIIJZd1DQdYHcVf0&si=_nTbVND9AOMCgGFI')">Tutoriales IA DotCSV</button>
+              <h3>CS50'S Introduction to Artificial Intelligence</h3>
+              <div class="option-buttons">
+                <button class="option-btn" onclick="window.open('https://cs50.harvard.edu/ai/2023/')">Harvard</button>
+                <button class="option-btn" onclick="window.open('https://www.edx.org/learn/artificial-intelligence/harvard-university-cs50-s-introduction-to-artificial-intelligence-with-python')">EDX</button>
+                <button class="option-btn" onclick="window.open('https://www.youtube.com/playlist?list=PLhQjrBD2T381PopUTYtMSstgk-hsTGkVm')">YouTube</button>
+              </div>
+            </div>
+            
+            <div class="right-side">
+              <button class="full-width-btn" onclick="window.open('https://youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc&si=Ye6yNfGi1t8854cu')">The Age of AI</button>
+              <h3>Machine Learning with Python</h3>
+              <div class="option-buttons">
+                <button class="option-btn" onclick="window.open('https://www.freecodecamp.org/learn/machine-learning-with-python/')">Website</button>
+                <button class="option-btn" onclick="window.open('https://www.youtube.com/watch?v=tPYj3fFJGjk')">YouTube</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="book-section">
+            <button class="book-btn" onclick="window.open('https://es.1lib.sk/booklist/1354904/6712f7/programaci%C3%B3n.html')">Libros Programación</button>
+            <button class="book-btn" onclick="window.open('https://es.1lib.sk/booklist/1354869/bc0797/ai.html')">Libros IA</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="discord-section">
+        <h2>Únete al Servidor de Discord</h2>
+        <div class="discord-container">
+          <img class="discord-logo" src="Iconos/discord.png" alt="Discord">
+          <button class="discord-btn" onclick="window.open('https://discord.gg/vQnmRFb6Jg')">Unirse</button>
+        </div>
+      </section>
+    </main>
+    
+    <script src="script.js"></script>
   </body>
 </html>

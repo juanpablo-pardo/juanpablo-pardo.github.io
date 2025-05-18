@@ -1,98 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>    
     <meta charset="utf-8">
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Pablo Pardo</title>
-    <link rel = "icon" href = "pablo2.png" type = "image/x-icon">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <div class="menu">
-	    <a class = "selected" href="index.html">Inicio</a>    
-	    <a href="canal.html">Canal</a>
-	    <a href="clases.html">Clases</a>
-		<a href="contacto.html">Contacto</a>
-    </div>
-    <br><br><br>
-  
+    <link rel="icon" href="pablo2.png" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <div class="content">
+    <header>
+      <nav class="menu">
+        <a class="selected" href="index.html">Inicio</a>    
+        <a href="canal.html">Canal</a>
+        <a href="clases.html">Clases</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="dark-mode-container">
+        <button id="dark-mode-toggle" class="dark-mode-button" aria-label="Cambiar modo oscuro/claro">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+    </header>
+    
+    <main class="content">
+      <section class="profile-section">
+        <img src="profile.png" class="profile-image" alt="Juan Pablo Pardo">
+        <h1>Hola, me llamo Juan Pablo 👋</h1>
+        <p class="presentation"><strong>Soy estudiante y divulgador de Inteligencia Artificial. Participo en proyectos de investigación en el campo de la IA y el Machine Learning y desarrollo soluciones de automatización para empresas. ¡Pongámonos en contacto!</strong></p>
+        <div class="button-group">
+          <button onclick="window.open('Curriculum Español.pdf')">Curriculum (Español)</button>
+          <button onclick="window.open('Curriculum Inglés.pdf')">Curriculum (English)</button>
+        </div>
+      </section>
+      
+      <section class="skills-section">
+        <h2>Habilidades Profesionales</h2>
+        
+        <div class="skills-container three-columns">
+          <!-- Columna de Inteligencia Artificial -->
+          <div class="skills-category">
+            <h3>Inteligencia Artificial</h3>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-brands fa-python skill-icon-fa"></i>
+                <span>Python</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-square-root-variable skill-icon-fa"></i>
+                <span>Matemáticas Avanzadas</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-robot skill-icon-fa"></i>
+                <span>Algoritmos de Machine Learning</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-brain skill-icon-fa"></i>
+                <span>Redes Neuronales</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-microchip skill-icon-fa"></i>
+                <span>Frameworks de IA</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-cogs skill-icon-fa"></i>
+                <span>Agentes Autónomos</span>
+              </div>
+            </div>
+          
+          </div>
+          
+          <!-- Columna de Soft Skills -->
+          <div class="skills-category">
+            <h3>Soft Skills</h3>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-people-group skill-icon-fa"></i>
+                <span>Trabajo en equipo</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-comments skill-icon-fa"></i>
+                <span>Comunicación efectiva</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-gear skill-icon-fa"></i>
+                <span>Resolución de problemas</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-code-branch skill-icon-fa"></i>
+                <span>Adaptabilidad</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-lightbulb skill-icon-fa"></i>
+                <span>Creatividad</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-compass skill-icon-fa"></i>
+                <span>Pensamiento crítico</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-chalkboard-user skill-icon-fa"></i>
+                <span>Capacidad didáctica</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Columna de Otras Habilidades -->
+          <div class="skills-category">
+            <h3>Otras Habilidades</h3>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-brands fa-html5 skill-icon-fa"></i>
+                <span>Diseño Web</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-video skill-icon-fa"></i>
+                <span>Edición de vídeo avanzada</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-cube skill-icon-fa"></i>
+                <span>Modelado 3D</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-image skill-icon-fa"></i>
+                <span>Edición de imagen</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-film skill-icon-fa"></i>
+                <span>Producción audiovisual</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-print skill-icon-fa"></i>
+                <span>Impresión 3D</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-palette skill-icon-fa"></i>
+                <span>Diseño gráfico</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="skills-section language-section">
+        <h2>Idiomas</h2>
+        <div class="language-container">
+          <div class="language-item">
+            <div class="language-info">
+              <img src="https://flagcdn.com/w40/es.png" class="flag" alt="Bandera de España">
+              <span>Castellano</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%;"></div>
+              </div>
+              <span class="level">Nativo</span>
+            </div>
+          </div>
+          
+          <div class="language-item">
+            <div class="language-info">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Galicia.svg/40px-Flag_of_Galicia.svg.png" class="flag" alt="Bandera de Galicia">
+              <span>Gallego</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%;"></div>
+              </div>
+              <span class="level">Nativo</span>
+            </div>
+          </div>
+          
+          <div class="language-item">
+            <div class="language-info">
+              <img src="https://flagcdn.com/w40/gb.png" class="flag" alt="Bandera del Reino Unido">
+              <span>Inglés</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 95%;"></div>
+              </div>
+              <span class="level">C2</span>
+            </div>
+          </div>
+          
+          <div class="language-item">
+            <div class="language-info">
+              <img src="https://flagcdn.com/w40/de.png" class="flag" alt="Bandera de Alemania">
+              <span>Alemán</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 25%;"></div>
+              </div>
+              <span class="level">A2</span>
+            </div>
+          </div>
+          
+          <div class="language-item">
+            <div class="language-info">
+              <img src="https://flagcdn.com/w40/fr.png" class="flag" alt="Bandera de Francia">
+              <span>Francés</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 15%;"></div>
+              </div>
+              <span class="level">Básico</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="projects-section">
+        <h2>Proyectos</h2>
+        <div class="card-grid card-grid-2">
+          <div class="card project-card">
+            <h3>Chatbot IA</h3>
+            <img src="mychatbot.jpg" class="project-image" alt="Chatbot IA">
+            <div class="button-group">
+              <button onclick="window.open('https://github.com/DimensionPardo/chatbot')">Repo Github</button>
+              <button>Demo</button>
+            </div>
+          </div>
+      
+          <div class="card project-card">
+            <h3>Clasificador de imágenes IA</h3>
+            <img src="person.jpg" class="project-image" alt="Clasificador de imágenes">
+            <div class="button-group">
+              <button onclick="window.open('https://github.com/DimensionPardo/Clasificador-Imagenes-Universal/')">Repo Github</button>
+              <button>Demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="contact-section">
+        <h2>Contáctame</h2>
+        <a href="mailto:pabloparper@gmail.com" class="email-button">
+          <button>Escríbeme un correo</button>
+        </a>
+        <p><strong>Correo: pabloparper@gmail.com</strong></p>
+        <div id="contact-form">
+          <script type="text/javascript" src="https://form.jotform.com/jsform/223564273533052"></script>
+        </div>
+      </section>
+    </main>
+    
     <script src="script.js"></script>
-    <img src="profile.png" id="pablo">
-    <h1>Hola, me llamo Juan Pablo 👋</h1>
-    <p id="presentation"><b>Soy investigador en Inteligencia Artificial y Desarrollador Web. Me interesan las posibilidades de la tecnología para mejorar la vida de las personas. Me considero una persona muy detallista, autodidacta y me gusta aprender constantemente sobre las nuevas tecnologías y aplicarlas en mis proyectos.</b></p>
-    <br>
-    <button onclick="window.open('Curriculum Español.pdf')">Curriculum (Español)</button><button onclick="window.open('Curriculum Inglés.pdf')">Curriculum (English)</button>
-    <h1>Skills</h1>
-    <div id="cards">
-
-      <div class="card">
-        <img src="Iconos/python.png" id="logo">
-        <h4>Python</h4>
-      </div>
-
-      <div class="card">
-        <img src="Iconos/tensorflow.png" id="logo">
-        <h4>Tensorflow</h4>
-      </div>
-
-      <div class="card">
-        <img src="Iconos/dr17.png" id="logo">
-        <h4>Resolve</h4>
-      </div>
-
-      <div class="card">
-        <img src="Iconos/blender.png" id="logo">
-        <h4>Blender</h4>
-      </div>
-
-    </div>
-    <br>
-    <div id="cards">
-
-    <div class="card">
-      <img src="Iconos/html.png" id="logo">
-			<h4>HTML</h4>
-    </div>
-
-    <div class="card">
-      <img src="Iconos/css.png" id="logo">
-			<h4>CSS</h4>
-    </div>
-
-    <div class="card">
-      <img src="Iconos/javascript.png" id="logo">
-			<h4>JavaScript</h4>
-    </div>
-
-    <div class="card">
-      <img src="Iconos/photoshop.png" id="logo">
-      <h4>Photoshop</h4>
-    </div>
-    </div>
-    <br><br>
-    <h1>Proyectos</h1>
-    <div id="proyects">
-
-      <div class="card">
-        <h4>Chatbot IA</h4>
-        <img src="mychatbot.jpg" id="logo">
-        <button onclick="window.open('https://github.com/DimensionPardo/chatbot')">Repo Github</button><button>Demo</button>
-      </div>
-  
-      <div class="card">
-        <h4>Clasificador de imágenes IA</h4>
-        <img src="person.jpg" id="logo">
-        <button onclick="window.open('https://github.com/DimensionPardo/Clasificador-Imagenes-Universal/')">Repo Github</button><button>Demo</button>
-      </div>
-  
-      </div>
-  <br><br>
-  <h1>Contáctame</h1>
-  <a href="mailto:pabloparper@gmail.com"><button >Escríbeme un correo</button></a>
-  <br><p><b>Correo: pabloparper@gmail.com</b></p>
-  <script type="text/javascript" src="https://form.jotform.com/jsform/223564273533052"></script> 
-</div> 
-
-</body>
+  </body>
 </html>
